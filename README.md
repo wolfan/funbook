@@ -1,10 +1,5 @@
-# 饭本
-一份关于美食点评打分的规则与计算方式。
+# Project 饭本
+- 实现一套简单且完整的美食评价系统。
+- 建立一个实例展示的WebApp。
 
-# 评价体系
-详细参阅 [饭体评价体系规则·v1](./rule/Evaluation system.md)
-
-# 实现
-Null
-
-# 一些
+# Evaluation: fe
