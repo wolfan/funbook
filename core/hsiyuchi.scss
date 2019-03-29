@@ -1,0 +1,134 @@
+// HsiyuChi
+$red: #ff3b30;
+$orange: #ff9500;
+$yellow: #ffcc00;
+$green: #4cd964;
+$cyan: #5ac8fa;
+$blue: #007aff;
+$purple: #5856d6;
+$pink: #ff3d55;
+$black: #04040f;
+$white: #fefefe;
+$gray: #ecf0f1;
+$tb-hdbg: #007aff;
+
+body{
+  margin: 0 auto;
+}
+
+// layout
+#nav{
+  height: 3rem;
+  display: flex;
+  border-bottom: 1px solid $gray;
+  box-shadow: .3rem 0 .6rem $gray;
+  .nav-bl{
+    padding: 0 .6rem;
+    .logo{
+      float: left;
+      padding: .1rem .6rem;
+      img{max-width: 2.8rem;}
+    }
+    .item{
+      line-height: 2.6rem;
+      padding: .2rem .6rem;
+      border-left: 1px solid $gray - 15%;
+      &:first-child{border-left-style: none;}
+    }
+  }
+  a{
+    color: $black;
+    text-decoration: none;
+    &:hover{color: $black + 100%;}
+  }
+}
+
+#apex{}
+
+#HsiyuChi{
+  width: 1200px;
+  margin: 0 auto;
+  #ranking{
+    margin: 1.2rem auto .3rem;
+    table{
+      width: 100%;
+      border-spacing: 0;
+      border: 1px solid $gray;
+      border-top-style: none;
+      border-radius: .3rem;
+      thead{
+        th{
+          color: $white;
+          font-weight: 500;
+          background-color: $tb-hdbg;
+          padding: .9rem .3rem;
+        }
+        th:first-child{border-radius: .3rem 0 0 0;}
+        th:last-child{border-radius: 0 .3rem 0 0;}
+      }
+      tbody{
+        text-align: center;
+        tr{
+          td{
+            padding: .6rem .6rem .3rem;
+            color: $black;
+            p{
+              margin-top: 0;
+              margin-bottom: .3rem;
+            }
+          }
+          &:nth-child(2n){
+            background-color: $gray;
+            &:hover{background-color: $gray - 15%;}
+          }
+          &:hover{background-color: $gray - 15%;}
+        }
+      }
+      tr{}
+    }
+  }
+  #info{
+    color: $gray;
+    text-align: center;
+    margin: 1.2rem auto .3rem;
+  }
+}
+
+@keyframes mov{
+  0%{}
+  20%{transform: translateY(-10%) rotate(-45deg);}
+  75%{transform: translateY(-45%) rotate(-45deg);}
+  100%{transform: translateY(-50%) rotate(-45deg);}
+}
+#raketo{
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  transform: rotate(-45deg);
+  &:hover{
+    animation-name: mov;
+    animation-duration: 3s;
+    transform: translateY(10%) rotate(-45deg);
+    animation-fill-mode: forwards;
+  }
+  a{
+    padding: .9rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+}
+
+// other
+.t-rg{
+  text-align: right;
+}
+.t-lf{
+  text-align: left;
+}
+.t-ce{
+  text-align: center;
+}
+
+.premio{
+  font-size: 1.8rem;
+}

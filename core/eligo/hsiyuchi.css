@@ -1,0 +1,101 @@
+body {
+  margin: 0 auto; }
+
+#nav {
+  height: 3rem;
+  display: flex;
+  border-bottom: 1px solid #ecf0f1;
+  box-shadow: 0.3rem 0 0.6rem #ecf0f1; }
+  #nav .nav-bl {
+    padding: 0 .6rem; }
+    #nav .nav-bl .logo {
+      float: left;
+      padding: .1rem .6rem; }
+      #nav .nav-bl .logo img {
+        max-width: 2.8rem; }
+    #nav .nav-bl .item {
+      line-height: 2.6rem;
+      padding: .2rem .6rem;
+      border-left: 1px solid #dde1e2; }
+      #nav .nav-bl .item:first-child {
+        border-left-style: none; }
+  #nav a {
+    color: #04040f;
+    text-decoration: none; }
+    #nav a:hover {
+      color: #686873; }
+
+#HsiyuChi {
+  width: 1200px;
+  margin: 0 auto; }
+  #HsiyuChi #ranking {
+    margin: 1.2rem auto .3rem; }
+    #HsiyuChi #ranking table {
+      width: 100%;
+      border-spacing: 0;
+      border: 1px solid #ecf0f1;
+      border-top-style: none;
+      border-radius: .3rem; }
+      #HsiyuChi #ranking table thead th {
+        color: #fefefe;
+        font-weight: 500;
+        background-color: #007aff;
+        padding: .9rem .3rem; }
+      #HsiyuChi #ranking table thead th:first-child {
+        border-radius: .3rem 0 0 0; }
+      #HsiyuChi #ranking table thead th:last-child {
+        border-radius: 0 .3rem 0 0; }
+      #HsiyuChi #ranking table tbody {
+        text-align: center; }
+        #HsiyuChi #ranking table tbody tr td {
+          padding: .6rem .6rem .3rem;
+          color: #04040f; }
+          #HsiyuChi #ranking table tbody tr td p {
+            margin-top: 0;
+            margin-bottom: .3rem; }
+        #HsiyuChi #ranking table tbody tr:nth-child(2n) {
+          background-color: #ecf0f1; }
+          #HsiyuChi #ranking table tbody tr:nth-child(2n):hover {
+            background-color: #dde1e2; }
+        #HsiyuChi #ranking table tbody tr:hover {
+          background-color: #dde1e2; }
+  #HsiyuChi #info {
+    color: #ecf0f1;
+    text-align: center;
+    margin: 1.2rem auto .3rem; }
+
+@keyframes mov {
+  0% { }
+  20% {
+    transform: translateY(-10%) rotate(-45deg); }
+  75% {
+    transform: translateY(-45%) rotate(-45deg); }
+  100% {
+    transform: translateY(-50%) rotate(-45deg); } }
+
+#raketo {
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  transform: rotate(-45deg); }
+  #raketo:hover {
+    animation-name: mov;
+    animation-duration: 3s;
+    transform: translateY(10%) rotate(-45deg);
+    animation-fill-mode: forwards; }
+  #raketo a {
+    padding: .9rem;
+    font-size: 1.5rem;
+    text-decoration: none; }
+
+.t-rg {
+  text-align: right; }
+
+.t-lf {
+  text-align: left; }
+
+.t-ce {
+  text-align: center; }
+
+.premio {
+  font-size: 1.8rem; }
