@@ -4,8 +4,9 @@ body {
 #nav {
   height: 3rem;
   display: flex;
+  background-color: #fbffff;
   border-bottom: 1px solid #ecf0f1;
-  box-shadow: 0.3rem 0 0.6rem #ecf0f1; }
+  box-shadow: 0 0.3rem 0.6rem #ecf0f1; }
   #nav .nav-bl {
     padding: 0 .6rem; }
     #nav .nav-bl .logo {
@@ -34,8 +35,11 @@ body {
       width: 100%;
       border-spacing: 0;
       border: 1px solid #ecf0f1;
+      border-bottom: 1px solid #dde1e2;
       border-top-style: none;
-      border-radius: .3rem; }
+      border-radius: .3rem;
+      border-spacing: 0;
+      box-shadow: 0.3rem 0.6rem 0.9rem #ecf0f1; }
       #HsiyuChi #ranking table thead th {
         color: #fefefe;
         font-weight: 500;
@@ -52,6 +56,7 @@ body {
           color: #04040f; }
           #HsiyuChi #ranking table tbody tr td p {
             margin-top: 0;
+            font-size: .9rem;
             margin-bottom: .3rem; }
         #HsiyuChi #ranking table tbody tr:nth-child(2n) {
           background-color: #ecf0f1; }
@@ -60,9 +65,9 @@ body {
         #HsiyuChi #ranking table tbody tr:hover {
           background-color: #dde1e2; }
   #HsiyuChi #info {
-    color: #ecf0f1;
     text-align: center;
-    margin: 1.2rem auto .3rem; }
+    color: #686873;
+    margin: 1.8rem auto .9rem; }
 
 @keyframes mov {
   0% { }
@@ -97,5 +102,29 @@ body {
 .t-ce {
   text-align: center; }
 
+.f500 {
+  font-weight: 500; }
+
 .premio {
   font-size: 1.8rem; }
+
+@media (max-width: 1200px) {
+  #HsiyuChi {
+    width: 1020px; } }
+
+@media (max-width: 800px) {
+  #HsiyuChi {
+    width: 765px; } }
+
+@media (max-width: 414px) {
+  #HsiyuChi {
+    width: auto;
+    margin-left: .3rem;
+    margin-right: .3rem; }
+    #HsiyuChi #ranking table thead tr {
+      width: auto !important;
+      display: block !important; }
+    #HsiyuChi #ranking table tbody tr td {
+      width: auto !important;
+      display: block !important;
+      text-align: center; } }

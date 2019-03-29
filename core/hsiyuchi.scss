@@ -20,8 +20,9 @@ body{
 #nav{
   height: 3rem;
   display: flex;
+  background-color: $gray + 15%;
   border-bottom: 1px solid $gray;
-  box-shadow: .3rem 0 .6rem $gray;
+  box-shadow: 0 .3rem .6rem $gray;
   .nav-bl{
     padding: 0 .6rem;
     .logo{
@@ -54,8 +55,11 @@ body{
       width: 100%;
       border-spacing: 0;
       border: 1px solid $gray;
+      border-bottom: 1px solid $gray - 15%;
       border-top-style: none;
       border-radius: .3rem;
+      border-spacing: 0;
+      box-shadow: .3rem .6rem .9rem $gray;
       thead{
         th{
           color: $white;
@@ -74,6 +78,7 @@ body{
             color: $black;
             p{
               margin-top: 0;
+              font-size: .9rem;
               margin-bottom: .3rem;
             }
           }
@@ -84,18 +89,16 @@ body{
           &:hover{background-color: $gray - 15%;}
         }
       }
-      tr{}
     }
   }
   #info{
-    color: $gray;
     text-align: center;
-    margin: 1.2rem auto .3rem;
+    color: $black + 100%;
+    margin: 1.8rem auto .9rem;
   }
 }
 
 @keyframes mov{
-  0%{}
   20%{transform: translateY(-10%) rotate(-45deg);}
   75%{transform: translateY(-45%) rotate(-45deg);}
   100%{transform: translateY(-50%) rotate(-45deg);}
@@ -128,7 +131,44 @@ body{
 .t-ce{
   text-align: center;
 }
+.f500{
+  font-weight: 500;
+}
 
 .premio{
   font-size: 1.8rem;
+}
+
+// screen
+@media (max-width: 1200px){
+  #HsiyuChi{width: 1020px;}
+}
+@media (max-width: 800px){
+  #HsiyuChi{width: 765px;}
+}
+@media (max-width: 414px){
+  #HsiyuChi{
+    width: auto;
+    margin-left: .3rem;
+    margin-right: .3rem;
+    #ranking{
+      table{
+        thead{
+          tr{
+            width: auto!important;
+            display: block!important;
+          }
+        }
+        tbody{
+          tr{
+            td{
+              width: auto!important;
+              display: block!important;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
 }
