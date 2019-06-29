@@ -1,0 +1,220 @@
+body {
+  margin: 0 auto;
+}
+
+#nav {
+  height: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fbffff;
+  border-bottom: 1px solid #ecf0f1;
+  -webkit-box-shadow: 0 0.3rem 0.6rem #ecf0f1;
+          box-shadow: 0 0.3rem 0.6rem #ecf0f1;
+}
+
+#nav .nav-bl {
+  padding: 0 .6rem;
+}
+
+#nav .nav-bl .logo {
+  float: left;
+  padding: .1rem .6rem;
+}
+
+#nav .nav-bl .logo img {
+  max-width: 2.8rem;
+}
+
+#nav .nav-bl .item {
+  line-height: 2.6rem;
+  padding: .2rem .6rem;
+  border-left: 1px solid #dde1e2;
+}
+
+#nav .nav-bl .item:first-child {
+  border-left-style: none;
+}
+
+#nav a {
+  color: #04040f;
+  text-decoration: none;
+}
+
+#nav a:hover {
+  color: #686873;
+}
+
+#HsiyuChi {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+#HsiyuChi #ranking {
+  margin: 1.2rem auto .3rem;
+}
+
+#HsiyuChi #ranking table {
+  width: 100%;
+  border-spacing: 0;
+  border: 1px solid #ecf0f1;
+  border-bottom: 1px solid #dde1e2;
+  border-top-style: none;
+  border-radius: .3rem;
+  border-spacing: 0;
+  -webkit-box-shadow: 0.3rem 0.6rem 0.9rem #ecf0f1;
+          box-shadow: 0.3rem 0.6rem 0.9rem #ecf0f1;
+}
+
+#HsiyuChi #ranking table thead th {
+  color: #fefefe;
+  font-weight: 500;
+  background-color: #007aff;
+  padding: .9rem .3rem;
+}
+
+#HsiyuChi #ranking table thead th:first-child {
+  border-radius: .3rem 0 0 0;
+}
+
+#HsiyuChi #ranking table thead th:last-child {
+  border-radius: 0 .3rem 0 0;
+}
+
+#HsiyuChi #ranking table tbody {
+  text-align: center;
+}
+
+#HsiyuChi #ranking table tbody tr td {
+  padding: .6rem .6rem .3rem;
+  color: #04040f;
+}
+
+#HsiyuChi #ranking table tbody tr td p {
+  margin-top: 0;
+  font-size: .9rem;
+  margin-bottom: .3rem;
+}
+
+#HsiyuChi #ranking table tbody tr:nth-child(2n) {
+  background-color: #ecf0f1;
+}
+
+#HsiyuChi #ranking table tbody tr:nth-child(2n):hover {
+  background-color: #dde1e2;
+}
+
+#HsiyuChi #ranking table tbody tr:hover {
+  background-color: #dde1e2;
+}
+
+#HsiyuChi #info {
+  text-align: center;
+  color: #686873;
+  margin: 1.8rem auto .9rem;
+}
+
+@-webkit-keyframes mov {
+  20% {
+    -webkit-transform: translateY(-10%) rotate(-45deg);
+            transform: translateY(-10%) rotate(-45deg);
+  }
+  75% {
+    -webkit-transform: translateY(-45%) rotate(-45deg);
+            transform: translateY(-45%) rotate(-45deg);
+  }
+  100% {
+    -webkit-transform: translateY(-50%) rotate(-45deg);
+            transform: translateY(-50%) rotate(-45deg);
+  }
+}
+
+@keyframes mov {
+  20% {
+    -webkit-transform: translateY(-10%) rotate(-45deg);
+            transform: translateY(-10%) rotate(-45deg);
+  }
+  75% {
+    -webkit-transform: translateY(-45%) rotate(-45deg);
+            transform: translateY(-45%) rotate(-45deg);
+  }
+  100% {
+    -webkit-transform: translateY(-50%) rotate(-45deg);
+            transform: translateY(-50%) rotate(-45deg);
+  }
+}
+
+#raketo {
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+#raketo:hover {
+  -webkit-animation-name: mov;
+          animation-name: mov;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-transform: translateY(10%) rotate(-45deg);
+          transform: translateY(10%) rotate(-45deg);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#raketo a {
+  padding: .9rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.t-rg {
+  text-align: right;
+}
+
+.t-lf {
+  text-align: left;
+}
+
+.t-ce {
+  text-align: center;
+}
+
+.f500 {
+  font-weight: 500;
+}
+
+.premio {
+  font-size: 1.8rem;
+}
+
+@media (max-width: 1200px) {
+  #HsiyuChi {
+    width: 1020px;
+  }
+}
+
+@media (max-width: 800px) {
+  #HsiyuChi {
+    width: 765px;
+  }
+}
+
+@media (max-width: 414px) {
+  #HsiyuChi {
+    width: auto;
+    margin-left: .3rem;
+    margin-right: .3rem;
+  }
+  #HsiyuChi #ranking table thead tr {
+    width: auto !important;
+    display: block !important;
+  }
+  #HsiyuChi #ranking table tbody tr td {
+    width: auto !important;
+    display: block !important;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=hsiyuchi.css.map */
