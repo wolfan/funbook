@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+
+  <!-- ne baidu transkodo -->
+  <meta name="Cache-Control" content="no-siteapp">
+
+  <!-- informo gup -->
+  <meta name="description" content="西域記：来自公主的邀请。">
+  <meta name="keywords" content="🍒">
+
+  <title>西域記</title>
+
+  <!-- icons -->
+  <link rel="icon" href="make/logo.png">
+  <link rel="apple-touch-icon" href="make/logo.png">
+
+  <link rel="stylesheet" href="core/eligo/hsiyuchi.css">
+
+</head>
+<body>
+
+  <!-- nav: home,ranking,ad-bn -->
+  <div id="nav" class="nav">
+    <div class="nav-bl">
+      <a href="#/home" class="logo"><img src="make/logo.png"></a>
+      <a href="#/ranking" class="item">总榜·Total list</a>
+      <a href="#/visa" class="item">签证·Visa</a>
+      <a href="#/destination" class="item">目的地·Destination</a>
+      <a href="#/guideline" class="item">攻略·Guideline</a>
+    </div>
+    <div class="nav-bl">
+      <!-- <a href="#/spare" class="item">spare</a> -->
+    </div>
+  </div>
+  
+  <!-- list page -->
+  <div id="apex"></div>
+  <div id="HsiyuChi" class="container page-1200">
+
+    <!-- ranking table -->
+    <div id="ranking">
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th>国家 Country</th>
+            <th>签证 Visa</th>
+            <th>社会 Society</th>
+            <th>其它 Other</th>
+          </tr>
+        </thead>
+        <tbody id="rank-table">
+          <tr>
+            <td class="premio">🥇</td>
+            <td class="t-rg">
+              <p>美利坚合众国</p>
+              <p>United States of America</p>
+            </td>
+            <td></td>
+            <td>💐❌⛔🕊</td>
+            <td>
+              <p>💴💵💶💷💳</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+      
+    <!-- info -->
+    <div id="info">西域記·HsiyuChi</div>
+  </div>
+
+  <div id="raketo"><a href="#nav">🚀</a></div>
+
+  <script>
+    const datumoj={}
+    const medalo= '🥇🥈🥉🏅🏆👑💣🔫🌀🏹💉';
+
+    const info= document.querySelector('#info');
+
+    // for(let i in medalo){
+    //   info.innerHTML+= medalo[i];
+    // }
+
+    const vas= {"Afghanistan":"阿富汗","Aland Islands":"奥兰群岛","Albania":"阿尔巴尼亚","Algeria":"阿尔及利亚","American Samoa":"美属萨摩亚","Andorra":"安道尔","Angola":"安哥拉"};
+    for(let i in vas){
+      document.querySelector('#rank-table').innerHTML+=`<tr>
+            <td class="premio">🏅</td>
+            <td class="t-rg">
+              <p>${vas[i]}</p>
+              <p>${i}</p>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>`;
+    }
+  </script>
+
+</body>
+</html>
